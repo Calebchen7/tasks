@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"basis_task2\startup_stm32f103xb.o"
+"basis_task2\main.o"
+"basis_task2\stm32f1xx_it.o"
+"basis_task2\stm32f1xx_hal_msp.o"
+"basis_task2\stm32f1xx_hal_gpio_ex.o"
+"basis_task2\stm32f1xx_hal_tim.o"
+"basis_task2\stm32f1xx_hal_tim_ex.o"
+"basis_task2\stm32f1xx_hal.o"
+"basis_task2\stm32f1xx_hal_rcc.o"
+"basis_task2\stm32f1xx_hal_rcc_ex.o"
+"basis_task2\stm32f1xx_hal_gpio.o"
+"basis_task2\stm32f1xx_hal_dma.o"
+"basis_task2\stm32f1xx_hal_cortex.o"
+"basis_task2\stm32f1xx_hal_pwr.o"
+"basis_task2\stm32f1xx_hal_flash.o"
+"basis_task2\stm32f1xx_hal_flash_ex.o"
+"basis_task2\stm32f1xx_hal_exti.o"
+"basis_task2\system_stm32f1xx.o"
+--strict --scatter "basis_task2\basis_task2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "basis_task2.map" -o basis_task2\basis_task2.axf
